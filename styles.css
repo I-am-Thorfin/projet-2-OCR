@@ -1,3 +1,10 @@
 h1 {
     color: rgb(0, 255, 106);
  }
+ .centerflex {
+     display:flex;
+     align-items: center;
+     justify-content: center;
+ }
+
+ 
