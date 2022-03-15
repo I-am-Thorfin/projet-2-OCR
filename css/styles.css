@@ -15,10 +15,10 @@ html, body {
     align-items: center;
     justify-content: space-between;
 }
-.taille_logo  {
+.size_logo  {
     height: 100px;
 }
-.boutons_nav_taille {
+.button_nav_size {
     width: 400px ;
 }
 .link_color{color: black;
@@ -41,6 +41,11 @@ html, body {
 }
 /*Sert à afficher une bordure invisible pour réccupérer le pixel perdu de .link_size */
 /****HEADER***/
+.title_intro{
+    padding-top:0px ;
+}
+
+/*Barre de recherche*/
 .globalsearch{
     width: 500px;
 border-radius: 10px;
@@ -70,4 +75,49 @@ border: 1px solid #f2f2f2;
     font-size: 18px;
     cursor: pointer;
     border-radius: 0 10px 10px 0;
+}
+/***FILTRE***/
+.main_cel_filt {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    width: 990px;
+}
+.cell_iconandfilt {
+    display: flex;
+    max-height: 50px;
+    border: 2px solid #f2f2f2;
+    border-radius: 25px;
+    cursor: pointer;
+}
+/****/
+.cell_iconandfilt:hover{
+border-color: #0065FC;    
+background-color: #DEEBFF;
+}
+.cell_iconandfilt:hover>.cell_icon {
+    color: #DEEBFF;
+    background-color: #0065FC;
+}
+.cell_iconandfilt:hover>.cell_txt {
+    
+}
+.cell_icon {
+    min-width: 54px;
+    width: 54px;
+    min-height: 54px;
+    height: 54px;
+    background-color: #DEEBFF ;
+    color: #0065FC;
+    border-radius: 27px;
+    margin-top: -2px;
+    margin-bottom: -2px;
+    margin-left: -10px;
+}
+.cell_txt {width: 100%;
+    height: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-weight: bold;
 }
