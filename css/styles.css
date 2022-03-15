@@ -20,6 +20,22 @@ html, body {
     justify-content: space-between;
     flex-wrap: wrap;
 }
+.flex_around_column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.flex_between_column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.flex_left {
+    display: flex;
+    justify-content: flex-start;
+}
+
 
 /*BARRE DE NAVIGATION*/
 .size_logo  {
@@ -147,26 +163,30 @@ html, body {
     margin-left: 20px;
     margin-right: 20px;
 }
-
 .blockheberg{
     flex: 2;
-    height: 800px;
+    height: 900px;
     border-radius: 20px;
     background-color: #F2F2F2;
     margin-right: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 .blockpopul{
     flex: 1;
-    height: 800px;
+    height: 900px;
     border-radius: 20px;
     background-color: #F2F2F2;
     margin-left: 20px;
 }
 .boxcard {background-color: white;
 width: 30%;
+min-width: 350px;
 height: auto;
 margin: 20px;
 border-radius: 25px;
+color: black;
+box-shadow: -1px 1px 10px #c4bfbf;
 }
 .boxtxt {
     margin-left: 20px;
@@ -231,4 +251,57 @@ border-radius: 25px;
     margin-right: 5px;
     margin-top: 5px;
     border-radius: 25px 25px 0 0;
+}
+/*POPULAIRE*/
+.boxcardpop{
+    width:500px;
+    height: 210px;
+    background-color:white;
+    margin: 30px;
+    border-radius: 25px;
+    box-shadow: -1px 1px 10px #c4bfbf;
+}
+.blocktitlespop {margin-left: 50px;
+    margin-right: 50px;
+}
+.imgboxcardpop_1 {
+    background-image: url("/images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    flex: 1;
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 25px 0 0 25px;
+}
+.imgboxcardpop_2 {
+    background-image: url("/images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    flex: 1;
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 25px 0 0 25px;
+}
+.imgboxcardpop_3 {
+    background-image: url("/images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    flex: 1;
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 25px 0 0 25px;
+}
+.boxtxtcardpop { flex: 1.5;
+}
+.boxtxtpop { 
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.boxetoilespop {
+    margin-bottom: 10px;
+    margin-left: 50px;
+    margin-right: 50px;  
 }
