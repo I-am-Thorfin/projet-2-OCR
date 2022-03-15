@@ -15,6 +15,13 @@ html, body {
     align-items: center;
     justify-content: space-between;
 }
+.flex_around_wrap {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/*BARRE DE NAVIGATION*/
 .size_logo  {
     height: 100px;
 }
@@ -48,7 +55,7 @@ html, body {
 /*Barre de recherche*/
 .globalsearch{
     width: 500px;
-border-radius: 10px;
+    border-radius: 10px;
  }
 .iconmap{
     width: 50px;
@@ -60,11 +67,11 @@ border-radius: 10px;
     border:none;
 }
 .searchinput{height: 50px;
-width: 250px;
-font-size: 18px;
-font-weight: bold;
-padding: 20px;
-border: 1px solid #f2f2f2;
+    width: 250px;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 20px;
+    border: 1px solid #f2f2f2;
 }
 .searchblock{
     height: 50px;
@@ -113,25 +120,115 @@ border: 1px solid #f2f2f2;
 .cell_iconandfilt:hover{
     border-color: #0065FC;    
     background-color: #DEEBFF;
-    }
-    .cell_iconandfilt:hover>.cell_icon {
-        color: #DEEBFF;
-        background-color: #0065FC;
-    }
-    .cell_iconandfilt:hover>.cell_txt { 
-        font-style: italic;
-    }
+}
+.cell_iconandfilt:hover>.cell_icon {
+    color: #DEEBFF;
+    background-color: #0065FC;
+}
+.cell_iconandfilt:hover>.cell_txt { 
+    font-style: italic;
+}
 /**MESSAGEINFO**/     
 .info_cell{
-width: 450px;
-margin-top: 20px;
+    width: 450px;
+    margin-top: 20px;
 }
 .info_logo{
-width: 20px;
-height: 20px;
-border: 2px solid #f2f2f2;
-border-radius: 10px;
-color: #0065FC;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #f2f2f2;
+    border-radius: 10px;
+    color: #0065FC;
 }
 .info_txt{
+}
+/**CORPS DU SITE**/
+.blocktitles{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.blockheberg{
+    flex: 2;
+    height: 800px;
+    border-radius: 20px;
+    background-color: #F2F2F2;
+    margin-right: 20px;
+}
+.blockpopul{
+    flex: 1;
+    height: 800px;
+    border-radius: 20px;
+    background-color: #F2F2F2;
+    margin-left: 20px;
+}
+.boxcard {background-color: white;
+width: 30%;
+height: auto;
+margin: 20px;
+border-radius: 25px;
+}
+.boxtxt {
+    margin-left: 20px;
+    margin-right: 10px;     
+}
+.imgboxcard_1 {
+    background-image: url("/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 180px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
+    border-radius: 25px 25px 0 0;
+}
+.imgboxcard_2 {
+    background-image: url("/images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 180px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
+    border-radius: 25px 25px 0 0;
+}
+.imgboxcard_3 {
+    background-image: url("/images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 180px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
+    border-radius: 25px 25px 0 0;
+}
+.imgboxcard_4 {
+    background-image: url("/images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 180px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
+    border-radius: 25px 25px 0 0;
+}
+.imgboxcard_5 {
+    background-image: url("/images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 180px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
+    border-radius: 25px 25px 0 0;
+}
+.imgboxcard_6 {
+    background-image: url("/images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 180px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
+    border-radius: 25px 25px 0 0;
 }
