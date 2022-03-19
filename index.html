@@ -15,17 +15,19 @@
    <body>
     <header>
       <nav>
-         <div class="flex_between">
-            <div><img class="size_logo" src="./images/Booki@3x.png" alt="Booki Logo"/></div>
+         <div class="nav_flex">
+            <div>
+               <img class="size_logo" src="./images/Booki@3x.png" alt="Booki Logo"/>
+            </div>
             <ul class="button_nav_size flex_around">
               <li class="link_size flex_center">
                 <div class="linkborder flex_center">
-                   <a class="link_color non_soulign" href="#Hébergements"><strong>Hébergements</strong></a>
+                   <a class="link_color non_soulign p_nav" href="#Hébergements"><strong>Hébergements</strong></a>
                 </div> 
                </li>
               <li class="link_size flex_center">
                  <div class="linkborder flex_center">
-                    <a class="link_color non_soulign" href="#Activités"><strong>Activités</strong></a>
+                    <a class="link_color non_soulign p_nav" href="#Activités"><strong>Activités</strong></a>
                  </div>
               </li> 
             </ul>
@@ -34,136 +36,137 @@
       
          <section>
             <div class="title_intro">
-               <h1>Trouvez votre hébergement pour des vacances de rêves</h1>
-               <p>En plein centre ville ou en pleine nature</p>
+               <h1 class="p_title">Trouvez votre hébergement pour des vacances de rêves</h1>
+               <p class="p_comm">En plein centre ville ou en pleine nature</p>
             </div>
             <div class="flex_center globalsearch">
                <div class="iconmap flex_center"><i class="bi bi-geo-alt-fill"></i></div>
                <div><input class="flex_center searchinput bordernone" type="search" placeholder="Marseille, France."> </div>
-               <div class="searchblock flex_center"> Rechercher</div>
+               <a class="searchblock flex_center non_soulign" href="#">Rechercher</a>
+               <a class="searchblock_mob flex_center non_soulign" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
             </div>
-            <div class="main_cel_filt">
-               <div>
-                  <div><h3>Filtres</h3></div>
+            <div class="main_cel_filt p_comm">             
+               <div class="title_filt">
+                  <h3 class="p_comm">Filtres</h3>
+               </div>           
+             <div class="cel_filt flex_between">
+               <div class="cell_iconandfilt">
+                  <div class="cell_icon flex_center "><i class="fa-solid fa-money-bill-wave fa-lg"></i></div>
+                  <div class="cell_txt p_cel_txt flex_center">Économique</div>
                </div>
                <div class="cell_iconandfilt">
-                  <div class="cell_icon flex_center fa-lg"><i class="fa-solid fa-money-bill-wave"></i></div>
-                  <div class="cell_txt flex_center">Économique</div>
+                  <div class="cell_icon flex_center"><i class="fa-solid fa-child fa-lg"></i></div>
+                  <div class="cell_txt p_cel_txt flex_center">Familial</div>
                </div>
                <div class="cell_iconandfilt">
-                  <div class="cell_icon flex_center fa-lg"><i class="fa-solid fa-child"></i></div>
-                  <div class="cell_txt flex_center">Familial</div>
+                  <div class="cell_icon flex_center"><i class="fa-solid fa-heart fa-lg"></i></div>
+                  <div class="cell_txt p_cel_txt flex_center">Romantique</div>
                </div>
                <div class="cell_iconandfilt">
-                  <div class="cell_icon flex_center fa-lg"><i class="fa-solid fa-heart"></i></div>
-                  <div class="cell_txt flex_center">Romantique</div>
+                  <div class="cell_icon flex_center"><i class="fa-solid fa-dog fa-lg"></i></div>
+                  <div class="cell_txt p_cel_txt flex_center">Animaux Autorisés</div>              
                </div>
-               <div class="cell_iconandfilt">
-                  <div class="cell_icon flex_center fa-lg"><i class="fa-solid fa-dog"></i></div>
-                  <div class="cell_txt flex_center">Animaux Autorisés</div>              
-               </div>
+             </div>
             </div>
-            <div class="info_cell flex_between">
-               <div class="info_logo flex_center"><i class="fa-solid fa-info"></i></div>
-               <div class="flex_center"><p>Plus de 500 logements sont disponibles dans cette ville</p></div>
+            <div class="info_cell flex_left">
+               <div class="info_logo flex_center p_comm"><i class="fa-solid fa-info"></i></div>
+               <p class="p_comm flex_center">Plus de 500 logements sont disponibles dans cette ville</p>
             </div>
          </section>
     </header>
     <main>
      <section>
-         <div class=".bloc_section_1 flex_around">             
+         <div class="bloc_section_1 flex_around">             
               <article class="blockheberg">                 
-                 <div class="blocktitles"><h2 id="Hébergements">Hébergements à Marseille</h2></div>
+                 <div class="blocktitles"><h2 id="Hébergements" class="p_title">Hébergements à Marseille</h2></div>
                  <div class="flex_around">
-                     <a class="boxcard non_soulign" href="#">
+                     <a class="boxcard non_soulign p_boxcard" href="#">
                        <div class="imgboxcard_1"></div>
                        <div class="boxtxt">
                           <h3>Auberge de La Cannebière</h3>
                           <p>Nuit à partir de 25€</p>
-                          <p>Les étoiles.</p>
+                          <div><i class="fa-solid fa-star stars_blue"></i><i class="fa-solid fa-star stars_blue"></i><i class="fa-solid fa-star stars_blue"></i><i class="fa-solid fa-star stars_blue"></i><i class="fa-solid fa-star stars_grey"></i></div>
                        </div>
                      </a>
-                     <a class="boxcard non_soulign" href="#">
+                     <a class="boxcard non_soulign p_boxcard" href="#">
                        <div class="imgboxcard_2"></div>
                        <div class="boxtxt">
                         <h3>Hôtel du port</h3>
                         <p>Nuit à partir de 52€</p>
-                        <p>Les étoiles.</p>
+                        <div><i class="fa-solid fa-star stars_blue"></i><i class="fa-solid fa-star stars_blue"></i><i class="fa-solid fa-star stars_blue"></i><i class="fa-solid fa-star stars_blue"></i><i class="fa-solid fa-star stars_blue"></i></div>
                        </div>
                      </a>
-                     <a class="boxcard non_soulign" href="#">
+                     <a class="boxcard non_soulign p_boxcard" href="#">
                       <div class="imgboxcard_3"></div>
                       <div class="boxtxt ">
                         <h3>Hôtel Les mouettes</h3>
                         <p>Nuit à partir de 76€</p>
-                        <p>Les étoiles.</p>
+                        <div><i class="fa-solid fa-star stars_blue"></i><i class="fa-solid fa-star stars_blue"></i><i class="fa-solid fa-star stars_blue"></i><i class="fa-solid fa-star stars_blue"></i><i class="fa-solid fa-star stars_grey"></i></div>
                       </div>
                      </a>
                  </div>
                  <div class="flex_around">    
-                     <a class="boxcard non_soulign" href="#">
+                     <a class="boxcard non_soulign p_boxcard" href="#">
                       <div class="imgboxcard_4"></div>
                       <div class="boxtxt">
                         <h3>Hôtel de la mer</h3>
                         <p>Nuit à partir de 46€</p>
-                        <p>Les étoiles.</p>
+                        <div><i class="fa-solid fa-star stars_blue"></i><i class="fa-solid fa-star stars_blue"></i><i class="fa-solid fa-star stars_blue"></i><i class="fa-solid fa-star stars_grey"></i><i class="fa-solid fa-star stars_grey"></i></div>
                       </div>
                      </a>
-                     <a class="boxcard non_soulign" href="#">
+                     <a class="boxcard non_soulign p_boxcard" href="#">
                       <div class="imgboxcard_5"></div>
                       <div class="boxtxt">
                         <h3>Auberge Le Panier</h3>
                         <p>Nuit à partir de 23€</p>
-                        <p>Les étoiles.</p>
+                        <div><i class="fa-solid fa-star stars_blue"></i><i class="fa-solid fa-star stars_blue"></i><i class="fa-solid fa-star stars_blue"></i><i class="fa-solid fa-star stars_blue"></i><i class="fa-solid fa-star stars_grey"></i></div>
                       </div>
                      </a>
-                     <a class="boxcard non_soulign" href="#">
+                     <a class="boxcard non_soulign p_boxcard" href="#">
                       <div class="imgboxcard_6"></div>
                       <div class="boxtxt">
                         <h3>Hôtel Chez Amina</h3>
                         <p>Nuit à partir de 96€</p>
-                        <p>Les étoiles.</p>
+                        <div><i class="fa-solid fa-star stars_blue"></i><i class="fa-solid fa-star stars_blue"></i><i class="fa-solid fa-star stars_blue"></i><i class="fa-solid fa-star stars_blue"></i><i class="fa-solid fa-star stars_blue"></i></div>
                       </div>
                      </a>
                  </div>
-                 <div class="afficherplus"><p><strong>Afficher Plus</strong> </p></div>
+                 <div class="afficherplus"><p class="p_comm"><strong><a class="non_soulign link_color" href="#">Afficher Plus</a></strong> </p></div>
               </article>                       
               <aside class="blockpopul">
-                 <div class="flex_between blocktitlespop"><div><h2>Les plus populaires</h2></div><div><i class="fa-solid fa-chart-line"></i></div> </div>
+                 <div class="flex_between blocktitlespop"><div><h2 class="p_title">Les plus populaires</h2></div><div><i class="fa-solid fa-chart-line fa-lg"></i></div> </div>
                  <div class="flex_around_column">
                     <a class="boxcardpop flex_left non_soulign" href="#">
                        <div class="imgboxcardpop_1"></div>
-                       <div class="boxtxtcardpop flex_between_column">                         
-                          <div class="boxtxtpop">
+                       <div class="boxtxtcardpop flex_between_column p_boxcard">                         
+                          <div class="boxtxtpop1 flex_between_column">
                              <h3>Hôtel Le soleil du matin</h3>
-                           </div>
-                          <div class="boxtxtpop"><p>Nuit à partir de 128€</p>
+                             <p>Nuit à partir de 128€</p>
                           </div>
-                          <div class="boxtxtpop"><p>Etoiles</p>
+                          <div class="boxstarpop">
+                           <i class="fa-solid fa-star stars_blue"></i><i class="fa-solid fa-star stars_blue"></i><i class="fa-solid fa-star stars_blue"></i><i class="fa-solid fa-star stars_blue"></i><i class="fa-solid fa-star stars_blue"></i>
                           </div>
                        </div>
                      </a>
-                    <a class="boxcardpop flex_left non_soulign" href="#">
+                    <a class="boxcardpop_bis flex_left non_soulign" href="#">
                      <div class="imgboxcardpop_2"></div>
-                     <div class="boxtxtcardpop flex_between_column">                         
-                        <div class="boxtxtpop">
+                     <div class="boxtxtcardpop flex_between_column p_boxcard">                         
+                        <div class="boxtxtpop1 flex_between_column">
                            <h3>Au coeur de l'eau Chambre d'hôtes</h3>
-                         </div>
-                        <div class="boxtxtpop"><p>Nuit à partir de 71€</p>
+                           <p>Nuit à partir de 71€</p>
                         </div>
-                        <div class="boxtxtpop"><p>Etoiles</p>
+                        <div class="boxstarpop"><i class="fa-solid fa-star stars_blue"></i><i class="fa-solid fa-star stars_blue"></i><i class="fa-solid fa-star stars_blue"></i><i class="fa-solid fa-star stars_blue"></i><i class="fa-solid fa-star stars_grey"></i>
                         </div>
                      </div>
                     </a>
                     <a class="boxcardpop flex_left non_soulign" href="#">
                      <div class="imgboxcardpop_3"></div>
-                     <div class="boxtxtcardpop flex_between_column">                         
-                        <div class="boxtxtpop">
+                     <div class="boxtxtcardpop flex_between_column p_boxcard">                         
+                        <div class="boxtxtpop1 flex_between_column">
                            <h3>Hôtel Tout bleu et Blanc</h3>
-                         </div>
-                        <div class="boxtxtpop"><p>Nuit à partir de 68€</p>
+                           <p>Nuit à partir de 68€</p>
                         </div>
-                        <div class="boxtxtpop"><p>Etoiles</p>
+                        <div class="boxstarpop"><i class="fa-solid fa-star stars_blue"></i><i class="fa-solid fa-star stars_blue"></i><i class="fa-solid fa-star stars_blue"></i><i class="fa-solid fa-star stars_blue"></i><i class="fa-solid fa-star stars_grey"></i>
                         </div>
                      </div>
                     </a> 
@@ -171,46 +174,65 @@
                </aside> 
          </div>   
      </section>   
-     <section>
-         <h2 id="Activités">Activités à Marseille</h2>
+     <section class="sec_activite">
+         <div class="activite_titre">
+            <h2 id="Activités" class="p_title">Activités à Marseille</h2>
+         </div>
          <div class="flex_between box_activite">
+            <div class="flex_between bloc_activite">   
                <a class="activite_card_box_1 non_soulign link_color" href="#">
                   <div class="activite_card_img_1"></div>
-                  <div class="activité_card_txt"><h3>Vieux Port</h3></div>
+                  <div class="activité_card_txt p_boxcard"><h3>Vieux Port</h3></div>
                </a>
                <div class="flex_between_column box_activite_flex">
                      <a class="activite_card_box_2 non_soulign link_color" href="#">
                         <div class="activite_card_img_2"></div>
-                        <div class="activité_card_txt"><h3>Fort de Pomègue</h3></div>
+                        <div class="activité_card_txt p_boxcard"><h3>Fort de Pomègue</h3></div>
                      </a>                  
                      <a class="activite_card_box_3 non_soulign link_color" href="#">
                         <div class="activite_card_img_3"></div>
-                        <div class="activité_card_txt"><h3>Île du Frioul</h3></div>
+                        <div class="activité_card_txt p_boxcard"><h3>Île du Frioul</h3></div>
                      </a>
                </div>   
+            </div>   
+            <div class="flex_between bloc_activite_2">   
                <a class="activite_card_box_4 non_soulign link_color" href="#">
                   <div class="activite_card_img_4"></div>
-                  <div class="activité_card_txt"><h3>Parc National des Calanques</h3></div>
+                  <div class="activité_card_txt p_boxcard"><h3>Parc National des Calanques</h3></div>
                </a>
                <div class="flex_between_column box_activite_flex">
                   
                      <a class="activite_card_box_5 non_soulign link_color" href="#">
                         <div class="activite_card_img_5"></div>
-                        <div class="activité_card_txt"><h3>Notre-Dame-de-la-Garde</h3></div>
+                        <div class="activité_card_txt p_boxcard"><h3>Notre-Dame-de-la-Garde</h3></div>
                      </a>
                      <a class="activite_card_box_6 non_soulign link_color" href="#">
                         <div class="activite_card_img_6"></div>
-                        <div class="activité_card_txt"><h3>Parc Longchamps</h3></div>
-                     </a>     
-               </div>               
+                        <div class="activité_card_txt p_boxcard"><h3>Parc Longchamps</h3></div>
+                     </a>       
+               </div>    
+            </div>              
          </div>
      </section> 
     </main>
     <footer>
-       <div>
-          <div></div>
-          <div></div>
-          <div></div>
+       <div class="flex_around_wrap">
+          <div class="bloc_txt_foot p_comm">
+            <div class="title_foot p_title_foot"><h3>À propos</h3></div> 
+            <p><a href="#" class="non_soulign link_color">Fonctionnement du site</a></p>
+            <p><a href="#" class="non_soulign link_color">Conditions générales de vente</a></p>
+            <p><a href="#" class="non_soulign link_color">Données et confidentialité</a></p>
+          </div>
+          <div class="bloc_txt_foot p_comm">
+            <div class="title_foot p_title_foot"><h3>Nos Hébergements</h3></div>
+             <p><a href="#" class="non_soulign link_color">Charte qualité</a></p>
+            <p><a href="#" class="non_soulign link_color">Soumettre votre hôtel</a></p>
+          </div>
+          <div class="bloc_txt_foot p_comm">
+            <div class="title_foot p_title_foot"><h3>Assistance</h3></div>
+             <p><a href="#" class="non_soulign link_color">Centre d'aide</a></p>
+            <p><a href="#" class="non_soulign link_color">Nous contacter</a></p>
+          </div>
        </div>
 
     </footer>
