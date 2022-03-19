@@ -287,26 +287,30 @@ font-size: 10px;}
         padding-right: 20px;
         padding-left: 20px;     
     }
-    .cel_filt_nl {
-        width: 100px;
-        margin-bottom: 0px;
-        margin-left: 0px;
-        width: 90%;   
-    }
-    .cel_filt.flex_between {
+        .cel_filt.flex_between {
         justify-content: space-around;
     }
  }
 /*RESPONSIVE CHANGEMENT LARGEUR 768*/
 @media all and (max-width: 768px)
- {   .cel_filt.flex_between { 
-     
+ {  
+    .cel_filt.flex_between { 
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        align-items: flex-end;
+    }
+    .main_cel_filt {
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 100%;
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+    .cel_filt_nl {
+        margin-bottom: 0px;
+        margin-left: 20px;  
+    }    
  }
-    
-    
- }
-
-
 /*Surlignement des filtres*/
 .cell_iconandfilt:hover{
     border-color: #0065FC;    
@@ -337,7 +341,7 @@ font-size: 10px;}
  {  .info_cell {
      margin-left: 20px;
      margin-right: 20px;
- }
+    }
  } 
 /***CORPS DU SITE***/
 /**SECTION1**/
@@ -714,9 +718,9 @@ margin-bottom: 20px;}
        margin-bottom: 30px;
    }
    .boxcardpop_bis.flex_left.non_soulign {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: flex-end;
+       display: flex;
+       flex-direction: row-reverse;
+       justify-content: flex-end;
    }
    .imgboxcardpop_2 {
        border-radius: 0 25px 25px 0;
@@ -742,3 +746,46 @@ margin-bottom: 20px;}
     }
 }
 
+
+/*RESPONSIVE CHANGEMENT LARGEUR 768*/
+@media all and (max-width: 768px)
+ {
+     .blockheberg { 
+        height :auto;
+        width: 100%;
+        flex:none;
+        padding: 0px;
+    }
+    .blocktitles {
+        width: 90%;        
+    }
+    .flex_between.blocktitlespop {
+        justify-content: space-between;
+        width: 90%;
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;        
+    }
+    .imgboxcardpop_1,.imgboxcardpop_2,.imgboxcardpop_3 {
+        width: 60%;
+        height: 275px;
+    } 
+    .boxcardpop_bis.flex_left.non_soulign {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+    .imgboxcardpop_2 {
+        border-radius: 25px 0 0 25px;
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+    .boxcardpop,.boxcardpop_bis {
+        width: 90%;   
+    }
+    .imgboxcardpop_1,.imgboxcardpop_2,.imgboxcardpop_3 {
+        margin-left: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }  
+}
