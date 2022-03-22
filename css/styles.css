@@ -974,10 +974,11 @@ margin-bottom: 20px;}
       margin: auto; 
     }
     .boxcard,.boxcard_disp_desktop {
+        
         height: 270px;
     }
     .boxcard {
-        margin: 20px;
+        margin: 15px;
         min-width: 140px;  
     }
     .boxtxt {
@@ -989,7 +990,7 @@ margin-bottom: 20px;}
         background-color: white;
         width: 100%;
         min-width: 180px;
-        margin: 20px;
+        margin: 15px;
         border-radius: 25px;
         color: black;
         box-shadow: -1px 1px 10px #c4bfbf; 
@@ -1120,7 +1121,7 @@ margin-bottom: 20px;}
         height: 165px;
     }
     .activite_card_img_3 {
-        height: 105px;
+        height: 115px;
     }
     .activite_card_img_4 {
         height: 385px;
@@ -1138,7 +1139,7 @@ margin-bottom: 20px;}
         height : 240px;
     }
     .activite_card_box_3 {
-        height: 180px;
+        height: 190px;
     }
     .activite_card_box_4 { 
         height: 460px;
