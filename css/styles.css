@@ -197,6 +197,7 @@ font-size: 10px;}
     margin-top: -2px;
     margin-bottom: -2px;
     margin-left: -10px;
+    
 }
 .cell_txt {width: 100%;
     height: 40px;
@@ -254,10 +255,11 @@ font-size: 10px;}
     height: 175px;
     border-radius: 25px;
     margin: 10px;
+    padding: 3px;
     color: black;
     box-shadow: -1px 1px 10px #c4bfbf;
 }
-.boxcard:hover,.boxcard_disp_other:hover,.boxcard_disp_desktop:hover {
+.boxcard:hover {
     transform: scale(1.1);
 }
 .boxtxt {
@@ -269,87 +271,14 @@ font-size: 10px;}
     justify-content: space-around;   
 }
 
-.boxcard_disp_desktop {
-    background-color: white;
-    width: 100%;
-    min-width: 180px;
-    height: 175px;
-    margin: 10px;
-    border-radius: 25px;
-    color: black;
-    box-shadow: -1px 1px 10px #c4bfbf; 
-    display: none;
-}
-.boxcard_disp_other {
-    background-color: white;
-    width: 100%;
-    min-width: 180px;
-    height: 175px;
-    margin: 10px;
-    border-radius: 25px;
-    color: black;
-    box-shadow: -1px 1px 10px #c4bfbf;
-}
-.imgboxcard_1 {
-    background-image: url("/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
-    background-size: cover;
-    background-position: center;
-    height: 100px;
-    margin-left: 4px;
-    margin-right: 4px;
-    margin-top: 4px;
-    border-radius: 25px 25px 0 0;
-}
-.imgboxcard_2 {
-    background-image: url("/images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg");
-    background-size: cover;
-    background-position: center;
+.imgboxcard {
     height: 95px;
-    margin-left: 5px;
-    margin-right: 5px;
-    margin-top: 5px;
     border-radius: 25px 25px 0 0;
+    object-fit: cover;
+   width: 100%;
+   
 }
-.imgboxcard_3 {
-    background-image: url("/images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg");
-    background-size: cover;
-    background-position: center;
-    height: 95px;
-    margin-left: 5px;
-    margin-right: 5px;
-    margin-top: 5px;
-    border-radius: 25px 25px 0 0;
-}
-.imgboxcard_4 {
-    background-image: url("/images/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg");
-    background-size: cover;
-    background-position: center;
-    height: 95px;
-    margin-left: 5px;
-    margin-right: 5px;
-    margin-top: 5px;
-    border-radius: 25px 25px 0 0;
-}
-.imgboxcard_5 {
-    background-image: url("/images/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg");
-    background-size: cover;
-    background-position: center;
-    height: 95px;
-    margin-left: 5px;
-    margin-right: 5px;
-    margin-top: 5px;
-    border-radius: 25px 25px 0 0;
-}
-.imgboxcard_6 {
-    background-image: url("/images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg");
-    background-size: cover;
-    background-position: center;
-    height: 95px;
-    margin-left: 5px;
-    margin-right: 5px;
-    margin-top: 5px;
-    border-radius: 25px 25px 0 0;
-}
+
 .afficherplus {
    width: 100%;
    margin-left: 20px;
@@ -373,45 +302,33 @@ font-size: 10px;}
     border-radius: 25px;
     box-shadow: -1px 1px 10px #c4bfbf;
     color: black;
+    padding: 3px;
 }
 .boxcardpop:hover,.boxcardpop_bis:hover {
     transform: scale(1.1);
 }
 .blocktitlespop {margin: 20px;
 }
-.imgboxcardpop_1 {
-    background-image: url("/images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg");
-    background-size: cover;
-    background-position: center;
-    width: 45%;
+
+.imgboxcardpop {
+    width: 33%;
+    min-width: 33%;
     height: 120px;
-    margin-left: 3px;
-    margin-top: 3px;
-    margin-bottom: 3px;
+    border-radius: 25px 25px 0 0;
+    object-fit: cover;
+    object-position: center;
     border-radius: 25px 0 0 25px;
 }
 .imgboxcardpop_2 {
-    background-image: url("/images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg");
-    background-size: cover;
-    background-position: center;
-    width: 45%;
+    width: 33%;
+    min-width: 33%;
     height: 120px;
-    margin-left: 3px;
-    margin-top: 3px;
-    margin-bottom: 3px;
+    border-radius: 25px 25px 0 0;
+    object-fit: cover;
+    object-position: center;
     border-radius: 25px 0 0 25px;
 }
-.imgboxcardpop_3 {
-    background-image: url("/images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg");
-    background-size: cover;
-    background-position: center;
-    width: 45%;
-    height: 120px;
-    margin-left: 3px;
-    margin-top: 3px;
-    margin-bottom: 3px;
-    border-radius: 25px 0 0 25px;
-}
+
 .boxtxtcardpop { 
     width: 100%;
     padding-top: 20px;
@@ -498,44 +415,38 @@ font-size: 10px;}
     transform: scale(1.1);    
 } 
 
-.activite_card_img_1 {background-image: url("/images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg");
-    background-size: cover;
-    background-position: center;
+.activite_card_img_1 { 
+    object-fit: cover;
     height: 320px;
     width: 100%; 
     border-radius: 25px 25px 0 0;
 }
-.activite_card_img_2 {background-image: url("/images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
-    background-size: cover;
-    background-position: center;
+.activite_card_img_2 { 
+    object-fit: cover;
     height: 150px;
     width: 100%; 
     border-radius: 25px 25px 0 0;
 }
-.activite_card_img_3 {background-image: url("/images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg");
-    background-size: cover;
-    background-position: center;
+.activite_card_img_3 {
+    object-fit: cover;
     height: 90px;
     width: 100%; 
     border-radius: 25px 25px 0 0;
 }
-.activite_card_img_4 {background-image: url("/images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg");
-    background-size: cover;
-    background-position: center;
+.activite_card_img_4 {
+    object-fit: cover;
     height: 320px;
     width: 100%;
     border-radius: 25px 25px 0 0;
 }
-.activite_card_img_5 {background-image: url("/images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg");
-    background-size: cover;
-    background-position: center;
+.activite_card_img_5 {
+    object-fit: cover;
     height: 120px;
     width: 100%; 
     border-radius: 25px 25px 0 0;
 }
-.activite_card_img_6 {background-image: url("/images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg");
-    background-size: cover;
-    background-position: center;
+.activite_card_img_6 {
+    object-fit: cover;
     height: 120px;
     width: 100%; 
     border-radius: 25px 25px 0 0;
@@ -584,7 +495,8 @@ margin-bottom: 20px;}
         margin-right: 0px;
     }
 }   
-/**** LES POLICES ****/
+/***** Polices *****/
+/*RESPONSIVE CHANGEMENT LARGEUR 992*/
 @media all and (max-width: 992px)
  { 
     .p_nav     {
@@ -594,55 +506,27 @@ margin-bottom: 20px;}
         font-size: 22px;
     }
     .p_comm {
-        font-size: 18px;
+        font-size: 16px;
     }
     .p_cel_txt {
         font-weight: bold;
     }
     .p_boxcard {
-        font-size: 18px;
+        font-size: 16px;
     }    
     .p_title_foot {
-        font-size: 19px;
+        font-size: 17px;
     }
     .stars_blue {color: #0065FC;
-        font-size: 15px;
+        font-size: 16px;
     }
     .stars_grey {
         color: #d9d9d9;
-        font-size: 15px;}
- }
-
- @media all and (max-width: 768px)
- { 
-    .p_nav     {
-        font-size: 25px;
-    }
-    .p_title {
-        font-size: 35px;
-    }
-    .p_comm {
-        font-size: 25px;
-    }
-    .p_cel_txt {
-        font-weight: bold;
-    }
-    .p_boxcard {
-        font-size: 25px;
-    }    
-    .p_title_foot {
-        font-size: 22px;
-    }
-    .stars_blue {color: #0065FC;
-        font-size: 20px;
-    }
-    .stars_grey {
-        color: #d9d9d9;
-        font-size: 20px;}
+        font-size: 16px;}
  }
 /****** HEADER ******/
 /**** NAV ****/
-/*RESPONSIVE CHANGEMENT LARGEUR 768*/
+/*RESPONSIVE CHANGEMENT LARGEUR 992*/
 @media all and (max-width: 992px)
  { 
     .nav_flex {
@@ -675,7 +559,6 @@ margin-bottom: 20px;}
         color: #0065FC;
     }  
  }
-
 /*RESPONSIVE CHANGEMENT LARGEUR 768*/
 @media all and (max-width: 768px)
  { 
@@ -735,33 +618,23 @@ margin-bottom: 20px;}
  { 
     .globalsearch {
         margin: auto; 
-        width: 80%; 
-        height: 75px;
+        width: 70%;      
         border-radius: 25px;
         border: 2px solid #f2f2f2;
         margin-bottom: 30px;
      }
-    .iconmap {
-        width: 75px;
-        min-width: 75px;
-        height: 75px;
-        border-radius: 25px 0 0 25px ;
+    .iconmap { min-width: 45px;
      } 
      .searchinput { 
         width: 100%;
-        height: 70px;
-        
+              
      }
      .searchblock {
-        width: auto;
-        
-        height: 75px;
-        border-radius: 0 25px 25px 0;
+        width: auto;   
         padding-left: 20px;
         padding-right: 30px;
      }     
  }
-
 /*RESPONSIVE CHANGEMENT LARGEUR 768*/
 @media all and (min-width: 769px)
  {     
@@ -771,30 +644,20 @@ margin-bottom: 20px;}
  }
  @media all and (max-width: 768px)
  { 
-    .globalsearch {
-        margin: auto; 
-        width: 90%; 
-        height: 107px;
-        border-radius: 25px;
-        border: 2px solid #f2f2f2;
-        margin-bottom: 30px;
+    .globalsearch { 
+        max-width: 350px;
+    }
+    .searchinput { 
+        padding-left: 10px;
+        padding-right: 10px;              
      }
-    .iconmap {
-        width: 105px;
-        min-width: 105px;
-        height: 107px;
-        border-radius: 25px 0 0 25px ;
-     } 
-     .searchinput { 
-        width: 100%;
-        height: 100px;
-        
-     }
-     .searchblock_mob {
-        width: 107px;
-        min-width: 105px;
-        height: 107px;
-        border-radius: 25px;
+    .searchblock_mob {
+        width: 44px;
+        min-width: 44px;
+        height: 44px;
+        margin-bottom: -3px;
+        margin-top: -3px;
+        *border-radius: 25px;
      }
 
      .searchblock.flex_center {
@@ -804,9 +667,9 @@ margin-bottom: 20px;}
 /****FILTRES****/
 /*RESPONSIVE CHANGEMENT LARGEUR 992*/
 @media all and (max-width: 992px)
- {  .title_filt {
+ {  
+    .title_filt {
         width: 80%;
-        margin-bottom: 15px;
     }
     .main_cel_filt {
         flex-direction: column;
@@ -817,25 +680,19 @@ margin-bottom: 20px;}
     }
     .cel_filt.flex_between {
         flex-wrap: wrap;
-        justify-content: flex-start;
+        justify-content: flex-start;        
     }
     .cell_iconandfilt { 
         max-height: 75px; 
-        border-radius: 53px;
-        margin-left: 5px;
-        margin-right: 20px;
-        margin-bottom: 20px;
+        border-radius: 53px;        
         border: 3px solid #f2f2f2;
     }
     .cel_filt {
-    width: 80%;}
+    width: 90%;
+    }
     .cell_icon { 
-        width: 75px;
-        min-width: 75px;
-        height: 75px;
-        border-radius: 50%;
         margin-top: -3px;
-    margin-bottom: -3px;
+        margin-bottom: -3px;
     }
     .cell_txt { margin: auto;
         height: 100%;
@@ -850,6 +707,7 @@ margin-bottom: 20px;}
         justify-content: flex-start;
         flex-wrap: wrap;
         align-items: flex-end;
+        margin-bottom: 20px;
     }
        
     .title_filt {
@@ -864,32 +722,16 @@ margin-bottom: 20px;}
     }
     .cel_filt.flex_between {
         justify-content: flex-start;
-    }
-    .cell_iconandfilt { 
-        max-height: 105px; 
-        border-radius: 53px;
-        margin-left: 5px;
-        margin-right: 20px;
-        margin-bottom: 20px;
-        border: 5px solid #f2f2f2;
-    }
+    }   
     .cel_filt {
-    width: 90%;}
-    .cell_icon { 
-        width: 105px;
-        min-width: 105px;
-        height: 105px;
-        border-radius: 50%;
-        margin-top: -5px;
-    margin-bottom: -5px;
-    }
+    width: 80%;}
+    
     .cell_txt { margin: auto;
         height: 100%;
-        padding-left: 30px;
-        padding-right: 30px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
  }
-
 /****INFO***/
 /*RESPONSIVE CHANGEMENT LARGEUR 992*/
 @media all and (max-width: 992px)
@@ -897,11 +739,7 @@ margin-bottom: 20px;}
         margin: auto;
         width: 80%;
     }
-    .info_logo {
-        min-width: 30px;
-        min-height: 30px;
-        border: 3px solid #f2f2f2;
-    }
+    
  }   
 /*RESPONSIVE CHANGEMENT LARGEUR 768*/
 @media all and (max-width: 768px)
@@ -910,13 +748,12 @@ margin-bottom: 20px;}
         width: 90%;
     }
     .info_logo {
-        min-width: 50px;
-        min-height: 50px;
-        border: 4px solid #f2f2f2;
+        min-width: 30px;
+        min-height: 30px;
+        border: 2px solid #f2f2f2;
 
     }
  }  
-
 /****** SECTION I : HEBERGERGEMENT ET PLUS POPULAIRE ******/
 /**** SECTION I : HEBERGERGEMENT ET PLUS POPULAIRE ****/
 /*RESPONSIVE CHANGEMENT LARGEUR 992*/
@@ -938,22 +775,24 @@ margin-bottom: 20px;}
     .blocktitles {
         margin: auto;
         width: 80%;
-     }
-     
+    }    
      .boxcard {
          margin: 15px;
-         height: 270px;
-         width: 45%;  
-     }
+         height: auto;
+         width: 45%; 
+         padding: 5px; 
+    }
+    .imgboxcard {
+        height: 150px;
+    }
      .boxtxt {
          margin-left: 20px;
          margin-right: 20px;   
          height: 120px;    
-     }
+    }
     .blocard {
         width: 85%;
     } 
-
    .blockpopul {
        width: 100%;
        flex: 0;
@@ -973,11 +812,13 @@ margin-bottom: 20px;}
        width: 72.5%;
        margin-bottom: 30px;
        margin-top: 0px;
+       padding: 5px;
    }
    .boxcardpop_bis{
        width: 72.5%;
        margin-top: 0px;
        margin-bottom: 30px;
+       padding: 5px;
    }
    .boxcardpop_bis.flex_left.non_soulign {
        display: flex;
@@ -986,19 +827,14 @@ margin-bottom: 20px;}
    }
    .imgboxcardpop_2 {
        border-radius: 0 25px 25px 0;
-       margin-right: 3px;
-       margin-left: 0px;
-   }
-   .imgboxcardpop_1,.imgboxcardpop_2,.imgboxcardpop_3 {
        width: 100%;
-       height: 200px;
+       height: 250px;
    }
-  
-   
-    .imgboxcard_1,.imgboxcard_2,.imgboxcard_3,.imgboxcard_4,.imgboxcard_5,.imgboxcard_6 {
-        height: 150px;
-    }
-
+   .imgboxcardpop {
+       width: 100%;
+       height: 250px;
+   }
+    
     .afficherplus {
         display: flex;
         justify-content: center;
@@ -1021,25 +857,23 @@ margin-bottom: 20px;}
     .blocard.flex_center_wrap {
         flex-direction: column;
         width: 90%;
+        min-width: 0px;
     }
     .boxcard {
         width: 100%;
         margin: auto;
         margin-top: 20px;
         margin-bottom: 20px;
+        padding: 5px;
         height: auto;
     }
     .boxtxt {
         margin-left: 20px;
         margin-right: 20px;   
-        height: 165px;     
+        height: 100px;     
     }
-    .imgboxcard_1,.imgboxcard_2,.imgboxcard_3,.imgboxcard_4,.imgboxcard_5,.imgboxcard_6 {
-        height: 235px;
-        margin-left: 10px;
-        margin-right: 10px;
-        margin-top: 10px;
-    }
+    
+
     .afficherplus {
         display: block;
         margin: auto;
@@ -1053,10 +887,11 @@ margin-bottom: 20px;}
         margin-top: 20px;
         margin-bottom: 20px;        
     }
-    .imgboxcardpop_1,.imgboxcardpop_2,.imgboxcardpop_3 {
-        width: 60%;
-        height: 275px;
-    } 
+    
+    .imgboxcardpop,.imgboxcardpop_2 {
+        height: 240px;
+        width: 40%;
+    }
     .boxcardpop_bis.flex_left.non_soulign {
         display: flex;
         flex-direction: row;
@@ -1069,12 +904,8 @@ margin-bottom: 20px;}
     }
     .boxcardpop,.boxcardpop_bis {
         width: 90%;   
-    }
-    .imgboxcardpop_1,.imgboxcardpop_2,.imgboxcardpop_3 {
-        margin-left: 10px;
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }  
+        padding: 5px;
+    }    
 }
 /**** SECTION II : ACTIVITE A MARSEILLE ****/
 /*RESPONSIVE CHANGEMENT LARGEUR 992*/
@@ -1090,7 +921,6 @@ margin-bottom: 20px;}
     .bloc_activite_2 {
         width: 80%;
         margin-left: 0px;
-
     }
     .activite_titre {      
        width: 80%;     
@@ -1157,8 +987,7 @@ margin-bottom: 20px;}
     .activite_card_box_4 {
         margin-left: 30px;
         margin-right: 0px;    
-    }
-    
+    }    
  }
 @media all and (max-width: 768px)
  {
@@ -1184,16 +1013,15 @@ margin-bottom: 20px;}
     }
     .activite_card_box_1,.activite_card_box_2,.activite_card_box_3,.activite_card_box_4,.activite_card_box_5,.activite_card_box_6 {
         margin: 0px;
-        height: 390px;
+        height: 250px;
         margin-bottom: 40px;
     }
     .activite_card_img_1,.activite_card_img_2,.activite_card_img_3,.activite_card_img_4,.activite_card_img_5,.activite_card_img_6 {
-        height: 275px;
+        height: 175px;
     }
-    .activité_card_txt { height: 115px;
+    .activité_card_txt { height: 75px;
     }   
  } 
-
 /**** FOOTER ****/
 /*RESPONSIVE CHANGEMENT LARGEUR 992*/
  @media all and (max-width: 992px)
@@ -1209,3 +1037,17 @@ margin-bottom: 20px;}
           min-width : 90%;    
     }
  }  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
