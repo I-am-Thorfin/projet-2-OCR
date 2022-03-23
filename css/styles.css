@@ -26,6 +26,13 @@ main, header { margin-left: 50px;
     align-items: center;
     justify-content: space-between;
 }
+
+.flex_center_wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
 .flex_around_wrap {
     display: flex;
     justify-content: space-around;
@@ -235,16 +242,18 @@ font-size: 10px;}
     background-color: #F2F2F2;
     margin-top: 30px;
     margin-right: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
+    
+}
+.blocard {
+    width: 100%;
+    min-width: 600px;
 }
 .boxcard {
     background-color: white;
-    width: 100%;
-    min-width: 180px;
+    width: 30%;
     height: 175px;
-    margin: 10px;
     border-radius: 25px;
+    margin: 10px;
     color: black;
     box-shadow: -1px 1px 10px #c4bfbf;
 }
@@ -926,6 +935,25 @@ margin-bottom: 20px;}
        padding-right: 0px;
        height: auto;   
     }
+    .blocktitles {
+        margin: auto;
+        width: 80%;
+     }
+     
+     .boxcard {
+         margin: 15px;
+         height: 270px;
+         width: 45%;  
+     }
+     .boxtxt {
+         margin-left: 20px;
+         margin-right: 20px;   
+         height: 120px;    
+     }
+    .blocard {
+        width: 85%;
+    } 
+
    .blockpopul {
        width: 100%;
        flex: 0;
@@ -965,41 +993,8 @@ margin-bottom: 20px;}
        width: 100%;
        height: 200px;
    }
-   .blocktitles {
-       margin: auto;
-       width: 80%;
-    }
-    .heb.flex_around { 
-      width: 85%;
-      margin: auto; 
-    }
-    .boxcard,.boxcard_disp_desktop {
-        
-        height: 270px;
-    }
-    .boxcard {
-        margin: 15px;
-        min-width: 140px;  
-    }
-    .boxtxt {
-        margin-left: 20px;
-        margin-right: 20px;   
-        height: 120px;    
-    }
-    .boxcard_disp_desktop {
-        background-color: white;
-        width: 100%;
-        min-width: 180px;
-        margin: 15px;
-        border-radius: 25px;
-        color: black;
-        box-shadow: -1px 1px 10px #c4bfbf; 
-        display: block;
-    }
-    .boxcard_disp_other {
-        display: none;  
-        margin: 20px;
-    } 
+  
+   
     .imgboxcard_1,.imgboxcard_2,.imgboxcard_3,.imgboxcard_4,.imgboxcard_5,.imgboxcard_6 {
         height: 150px;
     }
@@ -1023,11 +1018,15 @@ margin-bottom: 20px;}
     .blocktitles {
         width: 90%;        
     }
-    .heb.flex_around {
+    .blocard.flex_center_wrap {
         flex-direction: column;
         width: 90%;
     }
-    .boxcard,.boxcard_disp_desktop {
+    .boxcard {
+        width: 100%;
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
         height: auto;
     }
     .boxtxt {
