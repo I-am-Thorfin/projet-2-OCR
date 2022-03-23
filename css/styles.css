@@ -3,6 +3,12 @@
     margin: 0;
     padding: 0;
 }
+ul
+{
+list-style: none;
+padding: 0;
+margin: 0;
+}
 html, body {
     font-family: Raleway;
 }
@@ -609,7 +615,7 @@ margin-bottom: 20px;}
        margin: auto;
        margin-bottom: 30px;
        width: 90%;
-   }    
+    }    
 }
 
 /****RECHERCHE****/
@@ -639,7 +645,7 @@ margin-bottom: 20px;}
  {     
      .searchblock_mob.flex_center {
          display: none;
-     }
+    }
  }
  @media all and (max-width: 768px)
  { 
@@ -649,7 +655,7 @@ margin-bottom: 20px;}
     .searchinput { 
         padding-left: 10px;
         padding-right: 10px;              
-     }
+    }
     .searchblock_mob {
         width: 44px;
         min-width: 44px;
@@ -657,11 +663,10 @@ margin-bottom: 20px;}
         margin-bottom: -3px;
         margin-top: -3px;
         *border-radius: 25px;
-     }
-
-     .searchblock.flex_center {
+    }
+    .searchblock.flex_center {
         display: none;
-     }
+    }
  }
 /****FILTRES****/
 /*RESPONSIVE CHANGEMENT LARGEUR 992*/
@@ -767,8 +772,6 @@ margin-bottom: 20px;}
        margin-right: 0px;
        flex:none;
        background-color: transparent;
-       padding-left: 0px;
-       padding-right: 0px;
        height: auto;   
     }
     .blocktitles {
@@ -808,13 +811,13 @@ margin-bottom: 20px;}
         margin-bottom: 20px;        
     }
    .boxcardpop {
-       width: 72.5%;
+       width: 80%;
        margin-bottom: 30px;
        margin-top: 0px;
        padding: 5px;
    }
    .boxcardpop_bis{
-       width: 72.5%;
+       width: 80%;
        margin-top: 0px;
        margin-bottom: 30px;
        padding: 5px;
@@ -1032,8 +1035,12 @@ margin-bottom: 20px;}
 /*RESPONSIVE CHANGEMENT LARGEUR 768*/
  @media all and (max-width: 768px)
  {
+    footer { 
+        margin-top: 10px;
+    }
     .bloc_txt_foot {
-          min-width : 90%;    
+          min-width : 90%; 
+            
     }
  }  
 
