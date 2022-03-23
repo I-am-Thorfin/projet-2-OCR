@@ -1191,9 +1191,7 @@ margin-bottom: 20px;}
         height: 275px;
     }
     .activité_card_txt { height: 115px;
-    }
-     
-   
+    }   
  } 
 
 /**** FOOTER ****/
@@ -1206,8 +1204,8 @@ margin-bottom: 20px;}
   } 
 /*RESPONSIVE CHANGEMENT LARGEUR 768*/
  @media all and (max-width: 768px)
-  {
+ {
     .bloc_txt_foot {
           min-width : 90%;    
     }
-   }  
+ }  
