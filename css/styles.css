@@ -497,7 +497,7 @@ text-align:start;
 /****** @MEDIA POUR LE RESPONSIVE ******/
 /**** LES BASES ****/
 /*RESPONSIVE CHANGEMENT LARGEUR 992*/
-@media all and (max-device-width: 992px)
+@media all and (max-width: 992px)
 {
     main { 
         margin-left: 0px;
@@ -509,7 +509,7 @@ text-align:start;
     }
 }  
 /*RESPONSIVE CHANGEMENT LARGEUR 768*/
-@media all and (max-device-width: 768px)
+@media all and (max-width: 768px)
 {
     main { 
         margin-left: 0px;
@@ -524,7 +524,7 @@ text-align:start;
 /****** HEADER ******/
 /*RESPONSIVE CHANGEMENT LARGEUR 992*/
 /*POLICE*/
-@media all and (max-device-width: 992px)
+@media all and (max-width: 992px)
  { 
     .p_nav {
         font-size: 16px;
@@ -553,7 +553,7 @@ text-align:start;
 /****** HEADER ******/
 /**** NAV ****/
 /*RESPONSIVE CHANGEMENT LARGEUR 992*/
-@media all and (max-device-width: 992px)
+@media all and (max-width: 992px)
  { 
     .nav_flex {
         display: flex;
@@ -584,7 +584,7 @@ text-align:start;
     }  
  }
 /*RESPONSIVE CHANGEMENT LARGEUR 768*/
-@media all and (max-device-width: 768px)
+@media all and (max-width: 768px)
  { 
     .nav_flex {
         display: flex;
@@ -612,7 +612,7 @@ text-align:start;
  }
  /****EN TETE****/
  /*RESPONSIVE CHANGEMENT LARGEUR 992*/
-@media all and (max-device-width: 992px)
+@media all and (max-width: 992px)
 { 
    .title_intro {
        margin: auto;
@@ -621,7 +621,7 @@ text-align:start;
    }    
 }
  /*RESPONSIVE CHANGEMENT LARGEUR 768*/
-@media all and (max-device-width: 768px)
+@media all and (max-width: 768px)
 { 
    .title_intro {
        margin: auto;
@@ -632,7 +632,7 @@ text-align:start;
 
 /****RECHERCHE****/
 /*RESPONSIVE CHANGEMENT LARGEUR 992*/
-@media all and (max-device-width: 992px)
+@media all and (max-width: 992px)
  { 
     .globalsearch {
         margin: auto; 
@@ -653,7 +653,7 @@ text-align:start;
      }     
  }
 /*RESPONSIVE CHANGEMENT LARGEUR 768*/
-@media all and (min-device-width: 769px)
+@media all and (min-width: 769px)
  {     
      .searchblock_mob.flex_center {
          display: none;
@@ -682,7 +682,7 @@ text-align:start;
  }
 /****FILTRES****/
 /*RESPONSIVE CHANGEMENT LARGEUR 992*/
-@media all and (max-device-width: 992px)
+@media all and (max-width: 992px)
  {  
     .title_filt {
         width: 80%;
@@ -717,7 +717,7 @@ text-align:start;
     }
  }
 /*RESPONSIVE CHANGEMENT LARGEUR 768*/
-@media all and (max-device-width: 768px)
+@media all and (max-width: 768px)
  {  
     .cel_filt.flex_between { 
         justify-content: flex-start;
@@ -750,7 +750,7 @@ text-align:start;
  }
 /****INFO***/
 /*RESPONSIVE CHANGEMENT LARGEUR 992*/
-@media all and (max-device-width: 992px)
+@media all and (max-width: 992px)
  {  .info_cell {
         margin: auto;
         width: 80%;
@@ -758,7 +758,7 @@ text-align:start;
     }    
  }   
 /*RESPONSIVE CHANGEMENT LARGEUR 768*/
-@media all and (max-device-width: 768px)
+@media all and (max-width: 768px)
  {  .info_cell {
         width: 90%;
     }
@@ -772,7 +772,7 @@ text-align:start;
 /****** SECTION I : HEBERGERGEMENT ET PLUS POPULAIRE ******/
 /**** SECTION I : HEBERGERGEMENT ET PLUS POPULAIRE ****/
 /*RESPONSIVE CHANGEMENT LARGEUR 992*/
-@media all and (max-device-width: 992px)
+@media all and (max-width: 992px)
  {
    .bloc_section_1.flex_around {
        flex-direction: column-reverse;      
@@ -856,7 +856,7 @@ text-align:start;
     }    
 }
 /*RESPONSIVE CHANGEMENT LARGEUR 768*/
-@media all and (max-device-width: 768px)
+@media all and (max-width: 768px)
  {
     .blockheberg { 
         height :auto;
@@ -916,7 +916,7 @@ text-align:start;
 }
 /**** SECTION II : ACTIVITE A MARSEILLE ****/
 /*RESPONSIVE CHANGEMENT LARGEUR 992*/
-@media all and (max-device-width: 992px)
+@media all and (max-width: 992px)
  {
     .sec_activite { margin: auto;
         width: 100%;
@@ -996,7 +996,7 @@ text-align:start;
         margin-right: 0px;    
     }    
  }
-@media all and (max-device-width: 768px)
+@media all and (max-width: 768px)
  {
     .activite_titre {      
         width: 90%;       
@@ -1031,7 +1031,7 @@ text-align:start;
  } 
 /**** FOOTER ****/
 /*RESPONSIVE CHANGEMENT LARGEUR 992*/
- @media all and (max-device-width: 992px)
+ @media all and (max-width: 992px)
  {
    .bloc_txt_foot {
          min-width : 500px;    
@@ -1041,7 +1041,7 @@ text-align:start;
 }
   } 
 /*RESPONSIVE CHANGEMENT LARGEUR 768*/
- @media all and (max-device-width: 768px)
+ @media all and (max-width: 768px)
  {
     footer { 
         margin-top: 10px;
