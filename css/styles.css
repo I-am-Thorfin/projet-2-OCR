@@ -91,7 +91,7 @@ body {
     font-weight: bold;
 }
 .p_boxcard {
-    font-size: 13px;
+    font-size: 14px;
 }
 .p_title_foot {
     font-size: 14px;
@@ -540,34 +540,7 @@ text-align:start;
         margin-right: 0px;
     }
 }   
-/****** HEADER ******/
-/*RESPONSIVE CHANGEMENT LARGEUR 992*/
-/*POLICE*/
-@media all and (max-width: 992px)
- { 
-    .p_nav {
-        font-size: 16px;
-}
-    .p_title {
-        font-size: 18px;
-}
-    .p_comm {
-        font-size: 16px;
-}
-    .p_cel_txt {
-        font-weight: bold;
-}
-    .p_boxcard {
-        font-size: 16px;
-}
-    .p_title_foot {
-        font-size: 16px;
-}
-    .stars_blue {color: #0065FC;
-        font-size: 10px;}
-    .stars_grey { color: #d9d9d9;
-        font-size: 10px;}
-}
+
 /****** HEADER ******/
 /**** NAV ****/
 /*RESPONSIVE CHANGEMENT LARGEUR 992*/
