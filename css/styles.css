@@ -110,49 +110,59 @@ font-size: 10px;}
 .size_logo  {
     height: 50px;
 }
-.button_nav_size {
+.p_nav.flex_center { 
+    width: 100%;
+    height: 100%;
+}
+nav ul li {
+    width: 100%;
+    height: auto;   
+}
+.nav_sizing {
     width: 400px ;
 }
-.link_size_heb {
+.link_nav {
     width: 100%;
-    height: 100px;  
-    border-top: 2px solid #0065FC;
+    height: 100px;
+    border-top: 2px solid #0065FC;    
 }
-.link_size_act {
-    width: 100%;
-    height: 100px;  
-    border-top: 2px solid transparent;    
-}
-.link_color_heb { 
+.link_nav:last-child {
+    border-top: 2px solid transparent;
+} /*Définit la transparence de la bordure par défaut dans le dernier bloc*/
+.link_nav a{ 
     color: #0065FC;
- }
-.link_color_heb { 
-    color: #0065FC;
-}
-.link_color_heb:visited { 
-    color: #0065FC;
- }
-.link_color_act { 
+} /*Définit la couleur par défaut dans un bloc*/
+.link_nav:last-child a{ 
     color: black;
- }
-.link_size_act:hover>.link_color_act {
-    color: #0065FC;  
-}
-.link_size_act:hover {
+} /*Définit la couleur par défaut d'un lien dans le dernier bloc*/
+.link_nav:visited { 
+    color: #0065FC; 
+} /* Sert à définir la couleur par défaut d'un lien visité */
+nav a:visited:hover { 
+    color: #0065FC; 
+} /* Sert à définir la couleur par défaut d'un lien visité survolé */
+.nav_sizing:hover>.link_nav {
+    border-top: 2px solid transparent;
+} /* Sert à faire disparaître la bordure des blocs par défaut lors du survol du contenant */ 
+.nav_sizing:hover>.link_nav a:visited {
+    color: black;
+} /*Sert à définir la couleur par défaut des blocs lors du survol de tout le contenant*/
+.nav_sizing:hover>.link_nav:hover {
+    border-top: 2px solid #0065FC ;
+} /*Sert à faire apparaître la bordure sur le premier bloc au survol*/
+.nav_sizing:hover>.link_nav:hover a:visited {
+    color: #0065FC;
+} /*Sert à définir la couleur des liens visités quand le premer bloc est survolé*/
+.link_nav:last-child a:visited {
+    color: black;
+} /*Sert à définir la couleur pour les liens du dernier bloc */
+.link_nav:last-child:hover a:visited,.link_nav:last-child:hover a {
+    color: #0065FC;
+} /*Sert à définir la couleur des liens du dernier bloc lors du survol pour la version lien visité et lien normal */
+.nav_sizing:hover>.link_nav:last-child:hover {
     border-top: 2px solid #0065FC;
-}
-.button_nav_size:hover>.link_size_heb { 
-    border-top: 2px solid  transparent; 
-    }
-.button_nav_size:hover>.link_size_heb>.link_color_heb {
-        color: black;
-    } 
-.button_nav_size:hover>.link_size_heb:hover {
-        border-top: 2px solid  #0065FC; 
-    }     
-.button_nav_size:hover>.link_size_heb:hover>.link_color_heb {
-        color: #0065FC;
-    }   
+} /*Sert à faire apparaître la bordure sur le dernier bloc lors de son survol*/
+  
 /****HEADER***/
 .title_intro{
     padding-top:0px ;
@@ -313,8 +323,7 @@ font-size: 10px;}
     height: 125px;
     border-radius: 25px 25px 0 0;
     object-fit: cover;
-   width: 100%;
-   
+    width: 100%;  
 }
 .afficherplus {
    width: 100%;
@@ -545,72 +554,29 @@ text-align:start;
 /**** NAV ****/
 /*RESPONSIVE CHANGEMENT LARGEUR 992*/
 @media all and (max-width: 992px)
- { 
-    .nav_flex {
+ { .nav_flex {    
         display: flex;
         flex-direction: column;
         width: 100%;
         margin-bottom: 20px;
     }
-    .button_nav_size {
+    .nav_sizing {
         width: 100%;
-        height: auto;
     }
-    .link_size {
-        width: 100%;
-        height: 50px;        
-    }
-    .link_size_heb {
-        width: 100%;
+    .link_nav {
         height: 50px;
-        border-top: 3px solid transparent;
+        border-top: 2px solid transparent;
+        border-bottom: 3px solid #0065FC;    
+    }
+    .nav_sizing:hover>.link_nav:hover,.nav_sizing:hover>.link_nav:last-child:hover {
+        border-top: 2px solid transparent;
         border-bottom: 3px solid #0065FC;
     }
-    .link_size_act {
-        width: 100%;
-        height: 50px;
-        border-top: 3px solid transparent;
-        border-bottom: 3px solid #F2F2F2;
-    }
-    .link_size_act:hover {
-        border-top: 3px solid transparent;
-        border-bottom: 3px solid #0065FC;
-    }
-    .button_nav_size:hover>.link_size_heb { 
-        border-bottom: 3px solid  #f2f2f2; 
-        border-top: 3px solid transparent ;
-        }
-    .button_nav_size:hover>.link_size_heb:hover {
-        border-bottom: 3px solid  #0065FC;
-        border-top: 3px solid transparent; 
-        }     
- }
-/*RESPONSIVE CHANGEMENT LARGEUR 768*/
-@media all and (max-width: 768px)
- { 
-    .nav_flex {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        margin-bottom: 20px;
-    }
-    .button_nav_size {
-        width: 100%;
-        height: auto;
-    }
-    
-    .linkborder {
-        width: 100%;
-        border-top: 3px solid transparent;
-        border-bottom: 3px solid #F2F2F2;
-    }
-    .link_size:hover>.linkborder {
-        border-top: 3px solid transparent;
-        border-bottom: 3px solid #0065FC;
-    }
-    .link_size:hover>.linkborder>.link_color {
-        color: #0065FC;
-    }  
+    .link_nav:last-child,.nav_sizing:hover>.link_nav {
+        border-top: 2px solid transparent;
+        border-bottom: 3px solid transparent;
+
+    }     
  }
  /****EN TETE****/
  /*RESPONSIVE CHANGEMENT LARGEUR 992*/
@@ -1033,3 +999,5 @@ text-align:start;
         width : 90%;               
     }
  }  
+
+
