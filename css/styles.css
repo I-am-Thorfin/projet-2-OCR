@@ -186,11 +186,13 @@ nav a:visited:hover {
 .bordernone{
     border:none;
 }
-.searchinput{height: 40px;
+.searchinput{
+    height: 40px;
     width: 195px;
     font-size: 15px;
     font-weight: bold;
-    padding: 20px;
+    padding: 10px;
+   
 }
 .searchblock{
     height: 42px;
