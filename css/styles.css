@@ -3,18 +3,17 @@
     margin: 0;
     padding: 0;
 }
-a:link 
-{ 
- text-decoration:none; 
- color: black;
+a:link { 
+    text-decoration:none; 
+    color: black;
 } 
 a:visited {
     color: black;
 }
 ul {
-list-style: none;
-padding: 0;
-margin: 0;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 html, body {
     font-family: Raleway;
@@ -72,7 +71,6 @@ body {
     flex-direction: column;
     justify-content: space-between; 
 }
-
 .flex_left {
     display: flex;
     justify-content: flex-start;
@@ -96,10 +94,14 @@ body {
 .p_title_foot {
     font-size: 14px;
 }
-.stars_blue {color: #0065FC;
-font-size: 10px;}
-.stars_grey { color: #d9d9d9;
-font-size: 10px;}
+.stars_blue {
+    color: #0065FC;
+    font-size: 10px;
+}
+.stars_grey { 
+    color: #d9d9d9;
+    font-size: 10px;
+}
 
 /***BARRE DE NAVIGATION***/
 .nav_flex{
@@ -866,10 +868,10 @@ text-align:start;
 /*RESPONSIVE CHANGEMENT LARGEUR 992*/
 @media all and (max-width: 992px)
  {
-    .sec_activite { margin: auto;
+    .sec_activite {
+        margin: auto;
         width: 100%;
     }
-    
     .bloc_activite { width: 80%;
         margin-right: 0px;
     }
@@ -948,19 +950,17 @@ text-align:start;
  {
     .activite_titre {      
         width: 90%;       
-     }
-     .flex_between.box_activite {
+    }
+    .flex_between.box_activite {
          height: 100%;
          flex-direction: column;
          flex-wrap: nowrap;
-     }
-     
+    }
     .flex_between.bloc_activite,.flex_between.bloc_activite_2 {
         flex-direction: column;
         margin: auto;
         height: auto;
-        width: 90%;
-        
+        width: 90%;    
     }
     .box_activite_flex {
         height: auto;
@@ -986,8 +986,8 @@ text-align:start;
    .bloc_footer {      
        margin: auto;
        width: 80%;    
-}
-  } 
+   }
+ } 
 /*RESPONSIVE CHANGEMENT LARGEUR 768*/
  @media all and (max-width: 768px)
  {
@@ -996,7 +996,7 @@ text-align:start;
     }
     .bloc_txt_foot {
         min-width : 100%;    
-  }
+    }
     .bloc_footer { margin: auto;
         width : 90%;               
     }
