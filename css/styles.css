@@ -21,6 +21,9 @@ html, body {
 main, header { margin-left: 50px;
     margin-right: 50px;
 }
+main {
+    display: block;
+  }
 body {
     max-width: 1440px;
     margin: auto;
@@ -41,7 +44,6 @@ body {
     align-items: center;
     justify-content: space-between;
 }
-
 .flex_center_wrap {
     display: flex;
     align-items: center;
@@ -102,7 +104,6 @@ body {
     color: #d9d9d9;
     font-size: 10px;
 }
-
 /***BARRE DE NAVIGATION***/
 .nav_flex{
     display: flex;
@@ -176,7 +177,7 @@ nav a:visited:hover {
     margin-top: 10px;
     border: 1px solid #F2F2F2;
     height: 42px;
-    }
+}
 .iconmap{
     width: 42px;
     height: 42px;
@@ -193,8 +194,7 @@ nav a:visited:hover {
     width: 195px;
     font-size: 15px;
     font-weight: bold;
-    padding: 10px;
-   
+    padding: 10px; 
 }
 .searchblock{
     height: 42px;
@@ -259,15 +259,13 @@ nav a:visited:hover {
 }
 /*Surlignement des filtres*/
 .cell_iconandfilt:hover{
-       
     background-color: #F2F2F2;
     box-shadow: 5px 2px 5px #c4bfbf;
     }
 .cell_iconandfilt:hover>.cell_icon {
     color: #DEEBFF;
     background-color: #0065FC;
-    transform: scale(1.1);
-    
+    transform: scale(1.1);  
 }
 .cell_iconandfilt:hover>.cell_txt { 
     font-style: italic;
@@ -306,7 +304,7 @@ nav a:visited:hover {
     background-color: white;
     width: 28%;
     height: 210px;
-    border-radius: 25px;
+    border-radius: 20px;
     margin: 15px;
     padding: 3px;
     color: black;
@@ -325,7 +323,7 @@ nav a:visited:hover {
 }
 .imgboxcard {
     height: 125px;
-    border-radius: 25px 25px 0 0;
+    border-radius: 20px 20px 0 0;
     object-fit: cover;
     width: 100%;  
 }
@@ -349,7 +347,7 @@ nav a:visited:hover {
     height: auto;
     background-color:white;
     margin: 15px;
-    border-radius: 25px;
+    border-radius: 20px;
     box-shadow: -1px 1px 10px #c4bfbf;
     color: black;
     padding: 3px;
@@ -369,35 +367,25 @@ nav a:visited:hover {
     height: 140px;
     object-fit: cover;
     object-position: center;
-    border-radius: 25px 0 0 25px;
+    border-radius: 20px 0 0 20px;
 }
 .imgboxcardpop_2 {
     width: 33%;
     min-width: 33%;
     height: 135px;
-    border-radius: 25px 25px 0 0;
     object-fit: cover;
     object-position: center;
-    border-radius: 25px 0 0 25px;
+    border-radius: 20px 0 0 20px;
 }
 .boxtxtcardpop { 
     width: 100%;
     padding-top: 5px;
     padding-bottom: 5px;
-    margin-right :3px
-}
-.boxstarpop { 
-    margin-left: 20px;
-    margin-right: 20px;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 .boxtxtpop1 { 
-    height: 60%;
-    margin-left: 20px;
-    margin-right: 20px;
-}
-.boxetoilespop {
-    margin-left: 20px;
-    margin-right: 20px;  
+    height: 60%;    
 }
 /**ACTIVITE**/
 .box_activite {
@@ -420,7 +408,7 @@ nav a:visited:hover {
 .activite_card_box_1 {
     height: 370px;
     background-color: white;
-    border-radius: 25px;
+    border-radius: 20px;
     box-shadow: -1px 1px 10px #c4bfbf;
     width: 100%;
     margin-right: 30px;
@@ -428,7 +416,7 @@ nav a:visited:hover {
 .activite_card_box_2 {
     height: 200px;
     background-color: white;
-    border-radius: 25px;
+    border-radius: 20px;
     box-shadow: -1px 1px 10px #c4bfbf;
     width: 100%;
     
@@ -436,14 +424,14 @@ nav a:visited:hover {
 .activite_card_box_3 {
     height: 140px;
     background-color: white;
-    border-radius: 25px;
+    border-radius: 20px;
     box-shadow: -1px 1px 10px #c4bfbf;
     width: 100%;
 }
 .activite_card_box_4 {
     height: 370px;
     background-color: white;
-    border-radius: 25px;
+    border-radius: 20px;
     box-shadow: -1px 1px 10px #c4bfbf;
     width: 100%;
     margin-right: 30px;     
@@ -451,14 +439,14 @@ nav a:visited:hover {
 .activite_card_box_5 {
     height: 170px;
     background-color: white;
-    border-radius: 25px;
+    border-radius: 20px;
     box-shadow: -1px 1px 10px #c4bfbf;
     width: 100%;  
 }
 .activite_card_box_6 {
     height: 170px;
     background-color: white;
-    border-radius: 25px;
+    border-radius: 20px;
     box-shadow: -1px 1px 10px #c4bfbf;
     width: 100%;
 }
@@ -469,37 +457,37 @@ nav a:visited:hover {
     object-fit: cover;
     height: 320px;
     width: 100%; 
-    border-radius: 25px 25px 0 0;
+    border-radius: 20px 20px 0 0;
 }
 .activite_card_img_2 { 
     object-fit: cover;
     height: 150px;
     width: 100%; 
-    border-radius: 25px 25px 0 0;
+    border-radius: 20px 20px 0 0;
 }
 .activite_card_img_3 {
     object-fit: cover;
     height: 90px;
     width: 100%; 
-    border-radius: 25px 25px 0 0;
+    border-radius: 20px 20px 0 0;
 }
 .activite_card_img_4 {
     object-fit: cover;
     height: 320px;
     width: 100%;
-    border-radius: 25px 25px 0 0;
+    border-radius: 20px 20px 0 0;
 }
 .activite_card_img_5 {
     object-fit: cover;
     height: 120px;
     width: 100%; 
-    border-radius: 25px 25px 0 0;
+    border-radius: 20px 20px 0 0;
 }
 .activite_card_img_6 {
     object-fit: cover;
     height: 120px;
     width: 100%; 
-    border-radius: 25px 25px 0 0;
+    border-radius: 20px 20px 0 0;
 }
 .activité_card_txt { display: flex;
     align-items: center;
@@ -622,7 +610,7 @@ text-align:start;
      }     
  }
 /*RESPONSIVE CHANGEMENT LARGEUR 768*/
-@media all and (min-width: 769px)
+@media all and (min-width: 768.01px)
  {     
      .searchblock_mob.flex_center {
          display: none;
@@ -1001,5 +989,3 @@ text-align:start;
         width : 90%;               
     }
  }  
-
-
