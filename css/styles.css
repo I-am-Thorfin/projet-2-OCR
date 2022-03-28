@@ -28,6 +28,8 @@ body {
     max-width: 1440px;
     margin: auto;
 }
+
+button { border: none}
 /**TOOLBOX**/
 /*FLEX*/
 .flex_center {
@@ -216,6 +218,7 @@ nav a:visited:hover {
     color: white;
     position: relative;
     left: 2px;
+    cursor : pointer;
 }
 .searchblock:visited,.searchblock_mob:visited {
     color:white;
@@ -305,7 +308,7 @@ nav a:visited:hover {
     width: 28%;
     height: 210px;
     border-radius: 20px;
-    margin: 15px;
+    margin: 2%;
     padding: 3px;
     color: black;
     box-shadow: -1px 1px 10px #c4bfbf;
